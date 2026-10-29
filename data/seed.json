@@ -1,0 +1,476 @@
+{
+  "people": [
+    {
+      "id": "p1",
+      "name": "Dana Whitfield",
+      "role": "Project lead",
+      "email": "dana@example.com",
+      "color": "#4b36d9"
+    },
+    {
+      "id": "p2",
+      "name": "Marcus Lee",
+      "role": "Designer",
+      "email": "marcus@example.com",
+      "color": "#c2372f"
+    },
+    {
+      "id": "p3",
+      "name": "Priya Nair",
+      "role": "Developer",
+      "email": "priya@example.com",
+      "color": "#3f8f3a"
+    },
+    {
+      "id": "p4",
+      "name": "Tomas Rivera",
+      "role": "Marketing",
+      "email": "tomas@example.com",
+      "color": "#b8741a"
+    },
+    {
+      "id": "p5",
+      "name": "Hannah Okafor",
+      "role": "Operations",
+      "email": "hannah@example.com",
+      "color": "#1f7a8c"
+    }
+  ],
+  "boards": [
+    {
+      "id": "b1",
+      "name": "Website relaunch",
+      "description": "Ship the new company site before the holidays.",
+      "ownerId": "p1",
+      "isPrivate": false,
+      "columns": [
+        {
+          "id": "c1",
+          "name": "To do"
+        },
+        {
+          "id": "c2",
+          "name": "Doing"
+        },
+        {
+          "id": "c3",
+          "name": "Done"
+        },
+        {
+          "id": "c4",
+          "name": "Blocked"
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "name": "Spring campaign",
+      "description": "Emails, social posts and videos for the spring push.",
+      "ownerId": "p4",
+      "isPrivate": false,
+      "columns": [
+        {
+          "id": "c5",
+          "name": "To do"
+        },
+        {
+          "id": "c6",
+          "name": "Doing"
+        },
+        {
+          "id": "c7",
+          "name": "Done"
+        },
+        {
+          "id": "c8",
+          "name": "Review"
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "name": "Hiring plan",
+      "description": "Private: roles, resumes and offers.",
+      "ownerId": "p1",
+      "isPrivate": true,
+      "columns": [
+        {
+          "id": "c9",
+          "name": "To do"
+        },
+        {
+          "id": "c10",
+          "name": "Doing"
+        },
+        {
+          "id": "c11",
+          "name": "Done"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "k1",
+      "boardId": "b1",
+      "columnId": "c1",
+      "position": 0,
+      "title": "Write homepage copy",
+      "description": "Short headline, three benefits, one button.",
+      "assigneeId": "p4",
+      "due": "2026-11-02",
+      "labels": [
+        "Copy"
+      ],
+      "checklist": [
+        {
+          "id": "i1",
+          "text": "Headline",
+          "done": true
+        },
+        {
+          "id": "i2",
+          "text": "Three benefits",
+          "done": false
+        },
+        {
+          "id": "i3",
+          "text": "Button text",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "k2",
+      "boardId": "b1",
+      "columnId": "c1",
+      "position": 1,
+      "title": "Pick new photos",
+      "description": "Real photos of the team, not stock.",
+      "assigneeId": "p2",
+      "due": "11/5/2026",
+      "labels": [
+        "Design"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k7",
+      "boardId": "b1",
+      "columnId": "c1",
+      "position": 2,
+      "title": "Check site on phones",
+      "description": "Test on one iPhone and one Android.",
+      "assigneeId": "p1",
+      "due": "2026-11-12",
+      "labels": [
+        "QA"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k3",
+      "boardId": "b1",
+      "columnId": "c2",
+      "position": 1,
+      "title": "Build pricing page",
+      "description": "Three plans. Prices come from the team.",
+      "assigneeId": "p3",
+      "due": "2026-11-04",
+      "labels": [
+        "Dev"
+      ],
+      "checklist": [
+        {
+          "id": "i1",
+          "text": "Layout",
+          "done": true
+        },
+        {
+          "id": "i2",
+          "text": "Plan cards",
+          "done": true
+        },
+        {
+          "id": "i3",
+          "text": "Buy buttons",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "k4",
+      "boardId": "b1",
+      "columnId": "c2",
+      "position": 1,
+      "title": "Design mobile menu",
+      "description": "Simple menu with five links.",
+      "assigneeId": "p2",
+      "due": "2026-10-30",
+      "labels": [
+        "Design"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k5",
+      "boardId": "b1",
+      "columnId": "c3",
+      "position": 0,
+      "title": "Set up hosting",
+      "description": "Domain and hosting are ready.",
+      "assigneeId": "p5",
+      "due": "2026-10-20",
+      "labels": [
+        "Dev"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k6",
+      "boardId": "b1",
+      "columnId": "c4",
+      "position": 0,
+      "title": "Connect email tool",
+      "description": "Waiting on the login from the old agency.",
+      "assigneeId": null,
+      "due": "10/28/2026",
+      "labels": [
+        "Dev",
+        "Waiting"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k8",
+      "boardId": "b2",
+      "columnId": "c5",
+      "position": 0,
+      "title": "Plan launch email",
+      "description": "Three emails over two weeks.",
+      "assigneeId": "p4",
+      "due": "2026-11-09",
+      "labels": [
+        "Email"
+      ],
+      "checklist": [
+        {
+          "id": "i1",
+          "text": "Pick send dates",
+          "done": false
+        },
+        {
+          "id": "i2",
+          "text": "Write email 1",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "k9",
+      "boardId": "b2",
+      "columnId": "c5",
+      "position": 1,
+      "title": "Book photographer",
+      "description": "Half day, studio plus office.",
+      "assigneeId": "p5",
+      "due": "11/20/2026",
+      "labels": [
+        "Events"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k10",
+      "boardId": "b2",
+      "columnId": "c6",
+      "position": 0,
+      "title": "Draft social posts",
+      "description": "Ten posts for two weeks.",
+      "assigneeId": "p4",
+      "due": "2026-11-01",
+      "labels": [
+        "Social"
+      ],
+      "checklist": [
+        {
+          "id": "i1",
+          "text": "Week 1",
+          "done": true
+        },
+        {
+          "id": "i2",
+          "text": "Week 2",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "k11",
+      "boardId": "b2",
+      "columnId": "c6",
+      "position": 1,
+      "title": "Make 3 short videos",
+      "description": "Under 30 seconds each.",
+      "assigneeId": "p2",
+      "due": "2026-11-15",
+      "labels": [
+        "Video"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k12",
+      "boardId": "b2",
+      "columnId": "c8",
+      "position": 0,
+      "title": "Review ad budget",
+      "description": "Check what we spent last month.",
+      "assigneeId": "p1",
+      "due": "2026-10-31",
+      "labels": [
+        "Money"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k13",
+      "boardId": "b2",
+      "columnId": "c7",
+      "position": 0,
+      "title": "Pick campaign name",
+      "description": "Spring Forward won.",
+      "assigneeId": "p1",
+      "due": "2026-10-15",
+      "labels": [
+        "Planning"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k14",
+      "boardId": "b2",
+      "columnId": "c7",
+      "position": 1,
+      "title": "Order stickers",
+      "description": "200 stickers, round.",
+      "assigneeId": "p5",
+      "due": null,
+      "labels": [
+        "Events"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k15",
+      "boardId": "b3",
+      "columnId": "c9",
+      "position": 0,
+      "title": "Write job post: designer",
+      "description": "One page, plain words.",
+      "assigneeId": "p1",
+      "due": "2026-11-06",
+      "labels": [
+        "Hiring"
+      ],
+      "checklist": [
+        {
+          "id": "i1",
+          "text": "Draft",
+          "done": true
+        },
+        {
+          "id": "i2",
+          "text": "Pay range",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "k16",
+      "boardId": "b3",
+      "columnId": "c9",
+      "position": 1,
+      "title": "Set interview questions",
+      "description": "Five questions, same for all.",
+      "assigneeId": "p1",
+      "due": "11/10/2026",
+      "labels": [
+        "Hiring"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k17",
+      "boardId": "b3",
+      "columnId": "c10",
+      "position": 0,
+      "title": "Review 12 resumes",
+      "description": "Pick four to call.",
+      "assigneeId": "p5",
+      "due": "2026-11-03",
+      "labels": [
+        "Hiring"
+      ],
+      "checklist": []
+    },
+    {
+      "id": "k18",
+      "boardId": "b3",
+      "columnId": "c11",
+      "position": 0,
+      "title": "Get approval for the role",
+      "description": "Approved by the owner.",
+      "assigneeId": "p1",
+      "due": "2026-10-12",
+      "labels": [
+        "Hiring"
+      ],
+      "checklist": []
+    }
+  ],
+  "comments": [
+    {
+      "id": "m1",
+      "cardId": "k1",
+      "authorId": "p4",
+      "text": "First draft is in the shared doc.",
+      "at": "2026-10-27T14:05:00.000Z"
+    },
+    {
+      "id": "m2",
+      "cardId": "k1",
+      "authorId": "p1",
+      "text": "Looks good. Make the headline shorter.",
+      "at": "2026-10-27T16:30:00.000Z"
+    },
+    {
+      "id": "m3",
+      "cardId": "k3",
+      "authorId": "p3",
+      "text": "Layout is done. Waiting on the prices.",
+      "at": "2026-10-28T13:10:00.000Z"
+    },
+    {
+      "id": "m4",
+      "cardId": "k6",
+      "authorId": "p5",
+      "text": "I asked the agency again today.",
+      "at": "2026-10-28T19:45:00.000Z"
+    },
+    {
+      "id": "m5",
+      "cardId": "k10",
+      "authorId": "p4",
+      "text": "Week 1 posts are scheduled.",
+      "at": "2026-10-28T21:00:00.000Z"
+    },
+    {
+      "id": "m6",
+      "cardId": "k17",
+      "authorId": "p5",
+      "text": "Four look strong. Calls start Monday.",
+      "at": "2026-10-29T12:15:00.000Z"
+    }
+  ]
+}
